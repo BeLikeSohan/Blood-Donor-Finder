@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Join as a doner</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./js/jquery-2.2.4.min.js" ></script>
+  <link rel="stylesheet" href="./css/bootstrap.min.css" >
+  <script src="./js/bootstrap.min.js" ></script>
+  <link rel="stylesheet" href="./css/animate.min.css">
+
+  <script src="./js/script.js"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/stepcounter.css" />
+  <script src="./js/create_profile.js" ></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <div id="steps">
+    <table align="center">
+      <tr>
+        <td style="padding-right:25px; padding-left:11px"><input type="button" id="step1" class="btn btn-success btn-circle" value="1"></input></td>
+        <td style="padding-right:25px"><input type="button" class="btn btn-circle" id="step2" disabled value="2"></input></td>
+        <td style="padding-right:25px"><input type="button" class="btn btn-circle" id="step3" disabled value="3"></input></td>
+        <td style="padding-right:25px"><input type="button" class="btn btn-circle" id="step4" disabled value="4"></input></td>
+        <td style="padding-right:25px"><input type="button" class="btn btn-circle" id="step5" disabled value="5"></input></td>
+        <td style="padding-right:25px"><input type="button" class="btn btn-circle" id="step6" disabled value="5"></input></td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="gap" style="height:110px"></div>
+
+  <div id="doner_form">
+    <div id="form_name" class="">
+      <p align="center" class="gray-text">Enter your full name</p>
+      <input type="text" id="name" placeholder="Full Name" class="form-control"></input>
+
+    </div>
+
+    <div id="form_phonenumber" class="hide">
+      <p align="center" class="gray-text">Enter your phone number</p>
+      <input type="phonenumber" id="phonenumber" placeholder="+880" class="form-control"></input>
+    </div>
+
+    <div id="form_address">
+
+     <div id="form_bivag" class="hide">
+      <p align="center" class="gray-text">Select your District</p>
+      <select id="bivag_select" class="form-control">
+
+      </select>
+    </div>
+
+    <div id="form_zilla" class="hide">
+      <p align="center" class="gray-text">Select your Zilla</p>
+      <select id="zilla_select" class="form-control">
+
+      </select>
+    </div>
+
+    <div id="form_upazilla" class="hide">
+      <p align="center" class="gray-text">Select your Upazilla</p>
+      <select id="upazilla_select" class="form-control">
+
+      </select>
+     </div>
+    </div>
+
+    <div id="form_birthdate" class="hide">
+      <p align="center" class="gray-text">Enter your birthdate</p>
+      <p align="center"><input type="date" id="doner_birthdate" class=""btn btn-success></input></p>
+     </div>
+
+    <div id="form_bloodgroup" class="hide">
+      <select class="form-control" id="bloodgroup">
+      <option>A Positive (A+)</option>
+      <option>A Negitive (A-)</option>
+      <option>B Positive (B+)</option>
+      <option>B Negitive (B-)</option>
+      <option>O Positive (O+)</option>
+      <option>O Negitive (O-)</option>
+      </select>
+
+      <div style="height:20px"></div>
+
+    </div>
+
+    <div id="form_picture" class="hide">
+      <p align="center" class="gray-text">Select a picture of yours</p>
+        <img id="prev_img" src="/resource/images/default.jpg" class="img-circle img_center" height="110px" width="110px"/>
+      <div style="height:7px"></div>
+      <form id="uploadimage" method="post" enctype="multipart/form-data" action="">
+        <p align="center"><input type="file" name="file" id="upload_btn" required /></p>
+        <div style="height:13px"></div>
+        <p align="center"><input type="submit" class="btn btn-success" value="Create" class="submit" /></p>
+      </form>
+      <div class="alert alert-warning hide" id="alert">
+        <p><strong>Invalid image type or size</strong></p>
+        <br>
+        <p># The image must be in PNG, JPG or JPEG Format</p>
+        <p># Size of the image must be less then 1MB</p>
+      </div>
+    </div>
+
+  </div>
+  <div>
+    <input type="button" class="btn btn-success fixed_bottom" id="done_btn" value="Next"></input>
+  </div>
+
+  <div id="loading_page" class="hide">
+  <h2 align="center" id="loading_text" class="animated pulse infinite">Creating profile...</h2>
+  </div>
+
+</div>
+
+<div id="result" class="hide">
+
+</div>
+
+</body>
+
+</html>

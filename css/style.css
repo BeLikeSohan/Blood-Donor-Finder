@@ -1,0 +1,287 @@
+@font-face{
+	font-family: 'DosisLight';
+	src: url('fonts/Dosis-Light.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'Inconsolata';
+	src: url('fonts/Inconsolata-Regular.ttf') format('truetype');
+}
+
+#nav_bar{
+  margin:5px;
+  position:fixed;
+  bottom:0;
+  width:100%;
+}
+
+.fixed_bottom{
+	position:fixed;
+	bottom: 15px;
+}
+.w10{width:10px;}
+.step-line{width:10%}
+.container{margin-top:10px;}
+
+.top_margin1{margin-top:7px;}
+.top_margin2{margin-top:9px;}
+
+.logo-text{
+	text-align:center;
+	font-family: DosisLight;
+	background: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.logo-test-sm{
+	text-align:center;
+	font-family: DosisLight;
+}
+
+#search_page_title{
+	font-family: DosisLight;
+	background: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#loading_text{
+	font-family: DosisLight;
+	background: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#search_page{
+	margin-left:20px;
+	width:89%;
+}
+
+#slogan-text{
+	color:#AAB7B8;
+}
+
+#login_as_text{
+	font-size:130%;
+	color:#AAB7B8;
+}
+
+.list-text{
+	color:#AAB7B8;
+}
+
+#blood-group{
+	align:center;
+	height:43px;
+	width:140px;
+	display:block;
+	margin:0 auto;
+}
+
+
+#loading_page{
+	margin-top:50%;
+}
+
+.gap10{height:10px}
+.gap60{height:30px}
+.gap3{height:3px}
+.gap49per{height:49%}
+.gap7{height:7px;}
+
+.gray-text{color:#808080}
+
+.box50{
+	background-color:green;
+	height:49%;
+	width:100%;
+}
+
+#login_page{padding-top:23%;}
+
+.select-blood-group{
+	margin-top:40%;
+}
+
+#search_btn{
+	margin-top:10px;
+	display:block;
+	margin:0 auto;
+	align:center;
+	height:43px;
+	width:140px;
+}
+
+.hide{display:none}
+
+.panel_search{
+	padding:10px;
+}
+
+.set_right{
+	position:absolute;
+	right:0;
+}
+
+.center_bottom{
+	position:absolute;
+	center:0;
+}
+.no-margin{margin:0px}
+
+#doner_page_top_bar{
+	background-color:#E8E8E8;
+	padding-left:10px;
+	font-family: DosisLight;
+}
+
+
+
+#show_alert_bloodgroup{cursor:pointer;;}
+#doner_page_top_bar_title_text{
+	font-size:150%;
+}
+
+#doner_profile_pic{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#upload_modal_profile_pic{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px; /* Adjusts for spacing */
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+#doner_profile_pic:hover{opacity: 0.7;}
+
+#doner_picture_model{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.9);
+}
+
+.model_picture{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#doner_name_model{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .model_picture{
+        width: 100%;
+    }
+}
+
+.hap_h10{width:30%;}
+#doner_name{
+	font-size:130%;
+	text-align:center;
+	margin-top:10px;
+}
+
+#doner_bloodgroup{
+	font-size:110%;
+	text-align:center;
+	margin-top:3px;
+	color:#3385ff;
+	font-weight:bold;
+}
+
+
+
+
+.no_top{
+	margin-top:0px;
+	padding-top:0px;
+}
+
+#doner_says_box{
+	margin-top:11px;
+	background-color:#e6f0ff;
+	border:5px solid #66a3ff;
+	border-bottom:0px;
+	border-right:0px;
+	border-top:0px;
+}
+
+#doner_says_text{
+	padding-left:5px;
+	font-style:italic;
+	font-weight:bold;
+	padding-bottom:0px;
+	margin-bottom:0px;
+}
+
+#doner_says_what{
+	padding-left:10px;
+	padding-top:0px;
+	margin-top:0px;
+	font-weight:bold;
+}
+
+
+.img_center{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="./js/jquery-2.2.4.min.js" ></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" >
+    <script src="./js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" media="screen" href="css/particle.css">
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+<div class="container">
+<div id="main_page" class="">
+<div class="logo-text animated fadeIn hide">
+<h1 id="title-text">lorem ipsum</h>
+ </div>
+<p align="center" id="slogan-text" class="animated fadeIn hide">The First Blood Donation Finder  of Bangladesh</p>
+<div class="gap10">
+</div>
+<div class="select-blood-group">
+<select id="blood-group" class="btn btn-default hide animated fadeIn">
+<option>A Positive (A+)</option>
+<option>A Negitive (A-)</option>
+<option>B Positive (B+)</option>
+<option>B Negitive (B-)</option>
+<option>O Positive (O+)</option>
+<option>O Negitive (O-)</option>
+</select>
+<div class="gap3"></div>
+<input type="button" class="btn btn-default hide animated fadeIn" id="search_btn" value="Search"></input>
+<hr id="hr_div" class="hide"></hr>
+<p align="center" id="option_text" class="hide"><a href="/login.html">Join as a doner</a> or <a href="#">Know about us</a></p>
+</div>
+</div>
+</div>
+
+<div id="search_page" class="hide">
+<h2 id="search_page_title">Select your location</h2>
+<div class="panel_search panel panel-default">
+
+<div class="panel panel-default">
+<div class="panel-heading">বিভাগ</div>
+<div class="panel-body">
+<select class="btn btn-default dropdown-box" id="bivag_select">
+</select>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading">জেলা</div>
+<div class="panel-body">
+<select class="btn btn-default dropdown-box" id="zilla_select">
+</select>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading">উপজেলা</div>
+<div class="panel-body">
+<select class="btn btn-default dropdown-box" id="upazilla_select">
+</select>
+</div>
+</div>
+
+<p align="right" class="no-margin">
+<input type="button" class=" btn btn-info"  value="Find" id="find_btn"/>
+</p>
+</div>
+</div>
+
+<div id="loading_page" class="hide">
+<h2 align="center" id="loading_text" class="animated pulse infinite">Finding...</h2>
+</div>
+
+<div id="result_page" class="hide">
+<div class="logo-text">
+<h1 id="title-text">Lorem ipsum</h>
+</div>
+<div class="gap3"></div>
+<div class="container">
+<div id="result_here">
+
+</div>
+
+<div class="pager" id="">
+  <li class="previous disabled" id="previous_btn"><a>Previous</a></li>
+  <li class="next" id="next_btn"><a>Next</a></li>
+</div>
+</div>
+</div>
+<div id="particles-js"></div>
+<script src="./js/particles.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

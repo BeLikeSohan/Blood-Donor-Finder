@@ -1,0 +1,17 @@
+.container{
+	position:relative;
+	z-index:2;
+}
+canvas{
+	width:500px;
+	height:500px;
+	position:absolute;
+	z-index:1;
+	top:10%;
+	height:200px;
+	pointer-events:none;
+}
+
+body{
+	background:rgba(34, 38, 65, 1);
+}
